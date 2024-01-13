@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alata&family=Arvo&family=Bai+Jamjuree&family=Cabin:wght@400;500&family=Caveat:wght@600&family=Domine&family=Fraunces:opsz,wght@9..144,500&family=Heebo&family=Julius+Sans+One&family=Kanit&family=Lato&family=Mate+SC&family=Maven+Pro&family=Montserrat:wght@100;200;300;600&family=Noto+Sans:ital,wght@1,100&family=Open+Sans&family=PT+Sans&family=Pacifico&family=Poppins&family=Raleway&family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form_container">
+        <h2>Feedback Form</h2>
+
+        <div class="form_details">
+
+            <div class="error_message">
+               
+            </div>
+
+            <form name="feedback_form">
+                <div class="detail">
+                    <input type="text" name="usname" placeholder="Enter Your Name" id="name">
+                </div>
+                <div class="radio_btn detail">
+                    <div class="detail2">
+                        <label>
+                            <input type="radio" name="feedback_radio" id="general_feedback" value="general_feedback">
+                            General Feedback
+                        </label>
+                    </div>
+                    <div class="detail2">
+                        <label>
+                            <input type="radio" name="feedback_radio" id="technical_issue" value="technical_issue">
+                            Technical Issue
+                        </label>
+                    </div>
+                    <div class="detail2">
+                        <label>
+                            <input type="radio" name="feedback_radio" id="data_lost_issue" value="data_lost_issue">
+                            Data Lost Issue
+                        </label>
+                    </div>
+                </div>
+                <div class="detail">
+                    <input type="email" name="mail" id="E-mail" placeholder="you@gmail.com">
+                </div>
+                <div>
+                    <textarea name="text_area" id="text" placeholder="Enter your feedback briefly"></textarea>
+                </div>
+                <div class="detail">
+                    <label>
+                        <input type="checkbox" name="terms" id="check_box">
+                        I accept the terms and condition of this feedback form
+                    </label>
+                </div>
+                <div class="detail">
+                    <input type="submit" value="Submit" id="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
